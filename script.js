@@ -1,5 +1,11 @@
 "use strict";
 
+const dayOfTheWeek = document.querySelector(
+  '[data-testid="currentDayOfTheWeek"]'
+);
+
+const UTCTime = document.querySelector('[data-testid="currentUTCTime"]');
+
 function getCurrentDayOfWeek() {
   const daysOfWeek = [
     "Sunday",
@@ -15,7 +21,7 @@ function getCurrentDayOfWeek() {
   return currentDay;
 }
 
-//"currentDayOfTheWeek" Element
+// "currentDayOfTheWeek" Element
 document.querySelector(
   '[data-testid="currentDayOfTheWeek"]'
 ).textContent = `Current Day of the Week :  ${getCurrentDayOfWeek()}`;
@@ -24,10 +30,12 @@ document.querySelector(
 function getCurrentUTCTime() {
   const currentDate = new Date();
   const utcTimeString = currentDate.toUTCString();
-  return utcTimeString;
+  UTCTime.textContent = utcTimeString;
+  // return utcTimeString;
 }
+setInterval(getCurrentUTCTime, 1000);
 
 //"currentUTCTime" Element
-document.querySelector(
-  '[data-testid="currentUTCTime"]'
-).textContent = `Current UTC Time : ${getCurrentUTCTime()}`;
+// document.querySelector(
+//   '[data-testid="currentUTCTime"]'
+// ).textContent = `Current UTC Time : ${getCurrentUTCTime()}`;
