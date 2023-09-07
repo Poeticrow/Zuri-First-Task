@@ -14,7 +14,7 @@ header {
 }
 
 h1[data-testid="slackUserName"] {
-  font-size: 3rem;
+  font-size: 2.1rem;
   margin: 0;
 }
 div,
