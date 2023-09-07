@@ -23,7 +23,7 @@ document.querySelector(
 //////////////////////////
 function getCurrentUTCTime() {
   const currentDate = new Date();
-  const utcTimeString = currentDate.toISOString();
+  const utcTimeString = currentDate.toUTCString();
   return utcTimeString;
 }
 
