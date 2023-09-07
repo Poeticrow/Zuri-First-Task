@@ -15,18 +15,19 @@ function getCurrentDayOfWeek() {
   return currentDay;
 }
 
-// Update the content of the element with data-testid="currentDayOfTheWeek"
-document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent =
-  getCurrentDayOfWeek();
+//"currentDayOfTheWeek" Element
+document.querySelector(
+  '[data-testid="currentDayOfTheWeek"]'
+).textContent = `Current Day of the Week :  ${getCurrentDayOfWeek()}`;
 
-  
 //////////////////////////
 function getCurrentUTCTime() {
   const currentDate = new Date();
-  const utcTimeString = currentDate.toISOString().substr(11, 8); // Extract time portion from ISO string
+  const utcTimeString = currentDate.toISOString().substr(11, 8);
   return utcTimeString;
 }
 
-// Update the content of the element with data-testid="currentUTCTime"
-document.querySelector('[data-testid="currentUTCTime"]').textContent =
-  getCurrentUTCTime();
+//"currentUTCTime" Element
+document.querySelector(
+  '[data-testid="currentUTCTime"]'
+).textContent = `Current UTC Time : ${getCurrentUTCTime()}`;
