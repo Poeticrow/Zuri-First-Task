@@ -14,7 +14,7 @@ header {
 }
 
 h1[data-testid="slackUserName"] {
-  font-size: 24px;
+  font-size: 3rem;
   margin: 0;
 }
 div,
@@ -24,14 +24,15 @@ p {
   margin-bottom: 10px;
 }
 img[data-testid="slackDisplayImage"] {
-  width: 300px;
-  height: 300px;
+  max-width: 250px;
+  height: 250px;
   border-radius: 50%;
 }
 
 .container {
-  max-width: 85%;
-  margin: 10vh auto;
+  max-width: 65%;
+  min-width: 40%;
+  margin: 8vh auto;
   padding: 1.5em;
   background-color: #d9afd9;
   background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
