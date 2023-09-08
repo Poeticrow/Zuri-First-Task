@@ -18,7 +18,9 @@ h1[data-testid="slackUserName"] {
   margin: 0;
 }
 div,
-p {
+p,
+span,
+a {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 10px;
