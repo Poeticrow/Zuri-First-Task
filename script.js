@@ -29,11 +29,11 @@ document.querySelector(
 //////////////////////////
 function getCurrentUTCTime() {
   const currentDate = new Date();
-  const utcTimeString = currentDate.toUTCString();
-  UTCTime.textContent = utcTimeString;
+  const utcTimeString = currentDate.getTime();
+  UTCTime.textContent = `Current UTC Time: ${utcTimeString}`;
   // return utcTimeString;
 }
-setInterval(getCurrentUTCTime, 1000);
+setInterval(getCurrentUTCTime, 1);
 
 //"currentUTCTime" Element
 // document.querySelector(
